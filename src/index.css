@@ -1,0 +1,9 @@
+.cardTextB{
+  color: #2a209e;
+  font-weight: bold;
+}
+
+.textprimary{
+  --bs-text-opacity: 1;
+  color: #2a209e;
+}
