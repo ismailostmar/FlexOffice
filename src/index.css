@@ -1,9 +1,36 @@
-.cardTextB{
+.cardTextB {
   color: #2a209e;
   font-weight: bold;
 }
 
-.textprimary{
+.textprimary {
   --bs-text-opacity: 1;
   color: #2a209e;
+}
+
+.cardtitle {
+  font-weight: 500;
+  color: green;
+  text-transform: uppercase;
+  font: 1.5rem "MutatorSans" sans-serif;
+}
+
+#divmargtop {
+  margin-top: 5%;
+}
+
+#confirm {
+  color: #3fb678;
+  text-align: center;
+}
+
+#btnstyle {
+  padding: 10px 80px 10px 80px;
+}
+
+#loremtext {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #3fb678;
+  text-align: center;
 }
