@@ -16,7 +16,8 @@ function Acceuil() {
                             Bienvenue sur votre nouveau Flex Office At SG-ABS
                         </CardText>
                         <CardText>
-                            */*/*/*/*/*/*/*/*/*/*/*/*/*/**/*/*/*/*/*/*/*/*/*/*/ */
+                            lorem ipsum dolor sit amet, est purto audiam albucious te. Mea
+                            erant iruire sententuia te, per choro accusamos consequuntur ei.
                         </CardText>
                         <Form inline>
                             <FormGroup>
@@ -66,11 +67,13 @@ function Acceuil() {
                                 </Input>
                             </FormGroup>
                         </Form>
-                        <a href="/choisirLaDate">
-                            <Button tag="button" className="fw-semibold" color="danger">
-                                Suivant
-                            </Button>
-                        </a>
+                        <div className="text-center" id="divmargtop">
+                            <a href="/choisirLaDate">
+                                <Button tag="button" id="btnstyle" color="danger">
+                                    Suivant
+                                </Button>
+                            </a>
+                        </div>
                     </CardBody>
                 </Card>
             </div>

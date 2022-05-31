@@ -1,12 +1,12 @@
-import React from 'react';
-import { useState } from 'react';
+import React from "react";
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-daterangepicker/daterangepicker.css";
-import { Card, CardBody, CardTitle } from 'reactstrap';
-import { Button } from 'reactstrap';
-import { DateRange } from 'react-date-range';
-import fr from 'date-fns/locale/fr';
-import { addDays, isWeekend } from 'date-fns';
+import { Card, CardBody, CardTitle } from "reactstrap";
+import { Button } from "reactstrap";
+import { DateRange } from "react-date-range";
+import fr from "date-fns/locale/fr";
+import { addDays, isWeekend } from "date-fns";
 
 /* Dans cette fonction je clacule les jours de fin de semaine pour les désactiver*/
 
@@ -23,10 +23,9 @@ function calcWeekends(startDate, endDate) {
     return dates;
 }
 
-const disabledDates = calcWeekends(new Date(), addDays(new Date(), 100))
+const disabledDates = calcWeekends(new Date(), addDays(new Date(), 100));
 
 function DateBook() {
-
     const [state, setState] = useState([
         {
             startDate: new Date(),
@@ -49,12 +48,12 @@ function DateBook() {
                             moveRangeOnFirstSelection={false}
                             ranges={state}
                             locale={fr}
-                            rangeColors={['#3d550c']}
+                            rangeColors={["#3d550c"]}
                             disabledDates={disabledDates}
                         />
-                        <div className="mt-3">
+                        <div className="text-center" id="divmargtop">
                             <a href="/choisirLetage">
-                                <Button tag="button" className="fw-semibold" color="danger">
+                                <Button tag="button" id="btnstyle" color="danger">
                                     Suivant
                                 </Button>
                             </a>

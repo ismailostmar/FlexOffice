@@ -19,11 +19,13 @@ export default function Etage() {
                                 </Input>
                             </FormGroup>
                         </Form>
-                        <a href="/confirmerReserve">
-                            <Button tag="button" className="fw-semibold" color="danger" >
-                                Confirmer
-                            </Button>
-                        </a>
+                        <div className="text-center" id="divmargtop">
+                            <a href="/confirmerReserve">
+                                <Button tag="button" id="btnstyle" color="danger" >
+                                    Confirmer
+                                </Button>
+                            </a>
+                        </div>
                     </CardBody>
                 </Card>
             </div>
