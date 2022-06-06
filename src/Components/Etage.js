@@ -20,7 +20,7 @@ export default function Etage() {
                                 </Input>
                             </FormGroup>
                             <MapInteractionCSS>
-                                <img src="images/plantest.png" alt="plantest" />
+                                <img src="images/plantest.png" alt="plan" />
                             </MapInteractionCSS>
                         </Form>
                         <div className="text-center" id="divmargtop">
