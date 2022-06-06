@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Card, CardBody, CardText, Form, FormGroup, Input } from "reactstrap";
+import { MapInteractionCSS } from 'react-map-interaction';
 
 export default function Etage() {
     return (
@@ -18,6 +19,9 @@ export default function Etage() {
                                     <option>8</option>
                                 </Input>
                             </FormGroup>
+                            <MapInteractionCSS>
+                                <img src="images/plantest.png" alt="plantest" />
+                            </MapInteractionCSS>
                         </Form>
                         <div className="text-center" id="divmargtop">
                             <a href="/confirmerReserve">
