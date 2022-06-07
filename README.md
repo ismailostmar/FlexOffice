@@ -3,7 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Useful links 
-
+- https://www.kindacode.com/article/react-get-the-position-x-y-of-an-element/
+- https://www.geeksforgeeks.org/how-to-set-position-of-an-image-in-css/
 - https://codepen.io/chelleventurina/pen/gMpdKj
 
 ## Available Scripts
