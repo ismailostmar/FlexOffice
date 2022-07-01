@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Card, CardBody, CardText, Form, FormGroup, Input } from "reactstrap";
 import { MapInteractionCSS } from 'react-map-interaction';
+import Imagemap from "./ImageMapper";
+
 
 export default function Etage() {
     return (
@@ -20,7 +22,7 @@ export default function Etage() {
                                 </Input>
                             </FormGroup>
                             <MapInteractionCSS>
-                                <img src="images/plantest.png" alt="plan" />
+                                <Imagemap />
                             </MapInteractionCSS>
                         </Form>
                         <div className="text-center" id="divmargtop">
