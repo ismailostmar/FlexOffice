@@ -3,44 +3,37 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Slide from '@mui/material/Slide';
 
 
-function Copyright(props) {
-    return (
-        <Typography variant="body2" color="text.secondary" align="center" {...props}>
-            {'Copyright © '}
-            {new Date().getFullYear()}
-            {'  '}
-            <Link color="inherit" href="https://hacklab.africa/">
-                Hacklab Afrique
-            </Link>
-        </Typography>
-    );
-}
-
-function TransitionLeft(props) {
-    return <Slide {...props} direction="left" />;
-}
-  
+// function Copyright(props) {
+//     return (
+//         <Typography variant="body2" color="text.secondary" align="center" {...props}>
+//             {'Copyright © '}
+//             {new Date().getFullYear()}
+//             {'  '}
+//             <Link color="inherit" href="https://hacklab.africa/">
+//                 Hacklab Afrique
+//             </Link>
+//         </Typography>
+//     );
+// }
 
 const theme = createTheme();
 
-export default function SignUp() {
+export default function Register() {
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         console.log({
             username: data.get('username'),
-            password: data.get('password'),
             email: data.get('email'),
+            password: data.get('password'),
         });
     };
 
@@ -50,7 +43,7 @@ export default function SignUp() {
                 <CssBaseline />
                 <Box
                     sx={{
-                        marginTop: 8,
+                        marginTop: 5,
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',
@@ -60,22 +53,22 @@ export default function SignUp() {
                         m: 1,
                         backgroundColor: '#e3273a',
                     }}>
-                        <LockOutlinedIcon />
+                        <PersonAddIcon />
                     </Avatar>
-                    <Typography component="h1" variant="h5" >
+                    <Typography component={'div'} variant={"p"}>
                         Inscription
                     </Typography>
                     <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
                         <Grid container spacing={2}>
                             <Grid item xs={12}>
                                 <TextField
+                                    autoFocus
                                     autoComplete="given-name"
-                                    name="username"
-                                    required
                                     fullWidth
                                     id="username"
                                     label="Nom d'utilisateur"
-                                    autoFocus
+                                    name="username"
+                                    required
                                 />
                             </Grid>
                             <Grid item xs={12}>
@@ -111,17 +104,16 @@ export default function SignUp() {
                         >
                             S'inscrire
                         </Button>
-                        <Snackbar TransitionComponent={TransitionLeft} />;
-                        <Grid container justifyContent="flex-end">
+                        {/* <Grid container justifyContent="flex-end">
                             <Grid item>
-                                <Link href="/" variant="body2">
+                                <Link variant="body2">
                                     Vous avez déjà un compte? S'identifier
                                 </Link>
                             </Grid>
-                        </Grid>
+                        </Grid> */}
                     </Box>
                 </Box>
-                <Copyright sx={{ mt: 5 }} />
+                {/* <Copyright sx={{ mt: 8, mb: 4 }} /> */}
             </Container>
         </ThemeProvider>
     );

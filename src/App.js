@@ -4,16 +4,15 @@ import Acceuil from './Components/Acceuil';
 import DateBook from './Components/DateBook';
 import Etage from './Components/Etage';
 import Confirmation from './Components/Confirmation';
-import Login from './Components/Login';
-import Register from './Components/Register';
+import SignInOutContainer from './Containers/SignInOutContainer';
+
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter> 
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/" element={<SignInOutContainer />} />
           <Route path="/acceuil" element={<Acceuil />} />
           <Route path="/choisirLaDate" element={<DateBook />} />
           <Route path="/choisirLetage" element={<Etage />} />
